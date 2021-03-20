@@ -9,9 +9,11 @@ void Enemy::InitEnemy()
 
 void Enemy::InitBullet()
 {
-	this->Bullet.setRadius(10.f);
+	this->Bullet.setRadius(5.f);
 	this->Bullet.setFillColor(sf::Color::Yellow);
 }
+
+
 
 
 Enemy::Enemy()
@@ -23,3 +25,4 @@ Enemy::Enemy()
 Enemy::~Enemy()
 {
 }
+

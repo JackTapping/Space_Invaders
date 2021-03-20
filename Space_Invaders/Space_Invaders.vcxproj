@@ -149,6 +149,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Cover.cpp" />
     <ClCompile Include="src\Enemy.cpp" />
     <ClCompile Include="src\GameLogic.cpp" />
     <ClCompile Include="src\Player.cpp" />
@@ -156,6 +157,7 @@
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Cover.h" />
     <ClInclude Include="include\Enemy.h" />
     <ClInclude Include="include\GameLogic.h" />
     <ClInclude Include="include\Window.h" />

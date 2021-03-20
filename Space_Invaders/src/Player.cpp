@@ -8,7 +8,7 @@ void Player::InitPlayer()
 
 void Player::InitBullet()
 {
-	this->Bullet.setRadius(10.f);
+	this->Bullet.setRadius(5.f);
 	this->Bullet.setFillColor(sf::Color::Blue);
 }
 

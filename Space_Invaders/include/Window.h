@@ -11,6 +11,7 @@
 
 #include <Player.h>
 #include <Enemy.h>
+#include <Cover.h>
 
 
 /// <summary>
@@ -33,6 +34,9 @@ private:
 	void InitWindow();
 	void InitPlayer();
 	void InitEnemies();
+	void InitEnemySensor();
+	void InitCover();
+
 
 	
 
@@ -42,9 +46,17 @@ public:
 	sf::VideoMode videoMode;
 	sf::Event ev;
 
+	bool drawPlayerBullet;
+	bool drawEnemyBullet;
+
 	//Game Objects 
 	Player player;
 	Enemy enemy;
+	Cover cover;
+
+	sf::RectangleShape enemySensor;
+	sf::RectangleShape enemySensorLimiter;
+
 
 	//Constructor / Deconstructor
 	Window();
@@ -52,9 +64,13 @@ public:
 
 	//Function to Darw individual elements 
 	void RenderPlayer();
-	void RenederBullet();
+	void RenederPlayerBullet();
 
 	void RenderEnemy();
+	void RenderEnemySensor();
+	void RenderEnemyBullet();
+
+	void RenderCover();
 
 	//Functions to update the game state and Draw all of the elements 
 	void Render();

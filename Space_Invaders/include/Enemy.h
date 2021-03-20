@@ -2,9 +2,7 @@
 #include <vector>
 
 #include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/Audio.hpp>
+
 
 /// <summary>
 /// This class holds all of the objects that are needed to crate the elements that are used to represent the
@@ -23,15 +21,17 @@ private:
 	void InitEnemy();
 	void InitBullet();
 
+
 public:
 
-	//Shapes to represent the player
+	//Shapes to represent the enemy
 	sf::RectangleShape sprite;
 	sf::CircleShape    Bullet;
 
 	//when player shoots bullet objects will be put here 
-	std::vector<sf::CircleShape>    BulletsContainer;
-	std::vector<sf::RectangleShape> EnemyContainer;
+	//std::vector<sf::CircleShape>    BulletsContainer;
+	std::vector<sf::RectangleShape> EnemySpriteContainer;
+
 
 	//Consturctor / Deconstuctor 
 	Enemy();

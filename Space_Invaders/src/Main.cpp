@@ -4,6 +4,9 @@
 
 int main()
 {
+    //seedig random for the Sensor Of set veriable in the GameLogic class
+    srand(time(NULL));
+
     //Class that controls the game
     GameLogic game;
 
