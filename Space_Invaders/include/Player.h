@@ -1,7 +1,7 @@
 #pragma once
 
-#include <vector>
 
+#include <iostream>
 #include <SFML/Graphics.hpp>
 
 
@@ -23,10 +23,13 @@ private:
 
 public:
 
+	//sprites 
+	sf::Texture playerShipTexture;
+	sf::Texture playerBuletTexture;
 
-	//Shapes to represent the player
-	sf::RectangleShape sprite;
-	sf::CircleShape Bullet;
+	//Sprites to represent the player
+	sf::Sprite playerSprite;
+	sf::Sprite playerBulletSprite;
 
 
 

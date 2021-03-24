@@ -1,7 +1,8 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include <vector>
+#include <iostream>
+
 
 class Cover
 {
@@ -10,9 +11,12 @@ private:
 	void InitCover();
 public:
 
-	sf::RectangleShape sprite;
+	//texture for cover
+	sf::Texture coverTexture;
+	//Sprite for cover 
+	sf::Sprite coverSprite;
 
-	std::vector<sf::RectangleShape> destuctableCoverContainer;
+	sf::Sprite destuctableCoverContainer [138];
 
 
 	Cover();

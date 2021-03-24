@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <iostream>
 
 #include <SFML/Graphics.hpp>
 
@@ -23,14 +24,22 @@ private:
 
 
 public:
+	//Textures for enemis
+	sf::Texture enemyShipTextureA1;
+	sf::Texture enemyShipTextureA2;
+	sf::Texture enemyShipTextureB1;
+	sf::Texture enemyShipTextureB2;
+	sf::Texture enemyShipTextureC1;
+	sf::Texture enemyShipTextureC2;
+	sf::Texture enemyBulletTexture;
 
-	//Shapes to represent the enemy
-	sf::RectangleShape sprite;
-	sf::CircleShape    Bullet;
+	//Sprites to represent the enemy
+	sf::Sprite enemySprite;
+	sf::Sprite enemyBulletSprite;
 
 	//when player shoots bullet objects will be put here 
 	//std::vector<sf::CircleShape>    BulletsContainer;
-	std::vector<sf::RectangleShape> EnemySpriteContainer;
+	std::vector<sf::Sprite> EnemySpriteContainer;
 
 
 	//Consturctor / Deconstuctor 

@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include "GameLogic.h"
 
 int main()
@@ -10,13 +9,9 @@ int main()
     //Class that controls the game
     GameLogic game;
 
-
-
     //Main Loop
     while (game.isWindowOpen())
     {
-        
-
         //render screen
         game.Update();
 

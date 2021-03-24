@@ -2,14 +2,21 @@
 
 void Player::InitPlayer()
 {
-	this->sprite.setSize(sf::Vector2f(50.f,50.f));
-	this->sprite.setFillColor(sf::Color::Green);
+	
+	if(this->playerShipTexture.loadFromFile("..\\assets\\images\\Ship.png"))
+	{
+		std::cout << "Player Ship Texture Loaded\n";
+	}
+	this->playerSprite.setTexture(this->playerShipTexture);
 }
 
 void Player::InitBullet()
 {
-	this->Bullet.setRadius(5.f);
-	this->Bullet.setFillColor(sf::Color::Blue);
+	if (this->playerBuletTexture.loadFromFile("..\\assets\\images\\Bullet.png"))
+	{
+		std::cout << "Player Bullet Texture Loaded\n";
+	}
+	this->playerBulletSprite.setTexture(this->playerBuletTexture);
 }
 
 Player::Player()
