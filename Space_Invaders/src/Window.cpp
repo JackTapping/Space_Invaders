@@ -230,9 +230,9 @@ void Window::InitMusic()
 		std::cout << "End Screen Music Loaded\n";
 	}
 
-	this->gameMusic.setVolume(50);
-	this->mainMenuMusic.setVolume(50);
-	this->endScreenMusic.setVolume(50);
+	this->gameMusic.setVolume(25);
+	this->mainMenuMusic.setVolume(25);
+	this->endScreenMusic.setVolume(25);
 }
 
 
